@@ -1,0 +1,88 @@
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.register-card {
+  width: 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.register-title {
+  text-align: center;
+  color: #4f46e5;
+  margin-bottom: 20px;
+}
+
+.register-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.register-input:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.checkbox-box {
+  margin-bottom: 20px;
+}
+
+.register-btn {
+  margin-top: 10px;
+}
+.register-btn:hover {
+   
+  transform: scale(1.02);
+}
+
+.error-message {
+  color: #dc2626;
+  text-align: center;
+  font-weight: bold;
+}
+
+.success-message {
+  color: #16a34a;
+  text-align: center;
+  font-weight: bold;
+}
+
+.gender-box {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.eye-btn {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  cursor: pointer;
+  color: #4f46e5;
+}

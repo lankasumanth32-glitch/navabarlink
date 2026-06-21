@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 20px 40px;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #fbbf24;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 20px 40px;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #fbbf24;
+}
+.navbar a.active {
+  background: white;
+  color: #6d28d9;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+}
