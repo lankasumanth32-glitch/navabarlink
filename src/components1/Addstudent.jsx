@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "../Styles/AddStudent.css";
-function Addstudent({ students, setStudents }) {
+function AddStudent({ students, setStudents }) {
   
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -246,4 +246,4 @@ setAgree(false);
   );
 }
 
-export default Addstudent;
+export default AddStudent;
