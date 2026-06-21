@@ -21,12 +21,12 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from "./components1/Navbar";
 import Home from "./components1/Home";
 
-import AddStudent from "./components1/AddStudent";
+import Addstudent from "./components1/Addstudent";
 
 import StudentList from "./components1/StudentList";
 
 import Contact from "./components1/Contact";
-import NotFound from "./components1/NotFound";
+import Notfound from "./components1/Notfound";
 
 function App() {
   const [students, setStudents] = useState([]);
@@ -47,7 +47,7 @@ function App() {
         <Route
           path="/addstudent"
           element={
-            <AddStudent
+            <Addstudent
               students={students}
               setStudents={setStudents}
             />
@@ -60,7 +60,7 @@ function App() {
         />
 
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Notfound />} />
       </Routes>
     </>
   );
