@@ -18,7 +18,8 @@ import Practice from "./components1/Practice";
 import { Routes, Route } from 'react-router-dom';
 
 
-import Navbar from "./components1/Navbar";
+// /navigation 
+// import Navbar from "./components1/Navbar";
 import Home from "./components1/Home";
 
 import AddStudent from "./components1/AddStudent";
@@ -27,7 +28,20 @@ import NotFound from "./components1/NotFound";
 import StudentList from "./components1/StudentList";
 
 import Contact from "./components1/Contact";
+// Navigation
 
+// import USE from "./Task-9/USE";
+import UseEffectDemo from "./Task-9/UseEffectDemo";
+import Child from "./Task-9/Child";
+import "./Styles/UseEffectDemo.css";
+
+//Fetch Api 
+import FetchAPI from "./Task-8/FetchAPI";
+import "./Styles/FetchAPI.css";
+
+//Axios API
+import AxiosFetch from"./Task-8/AxiosFetch";
+import "./Styles/AxiosFetch.css";
 
 function App() {
   const [students, setStudents] = useState([]);
@@ -35,16 +49,17 @@ function App() {
   return  (
 
     <>
+     {/* <USE />  */}
+       {/* <Navbar /> */}
     
-      <Navbar />
-
       <Routes>
+         
+         <Route path="/profilecard" element={<Profilecard />} />
+        <Route path="/practice" element={<Practice />} /> 
+       
 
-        <Route path="/profilecard" element={<Profilecard />} />
-        <Route path="/practice" element={<Practice />} />
-
-        <Route path="/" element={<Home />} />
-
+        {/* navigation */}
+         <Route path="/" element={<Home />} />
         <Route
           path="/addstudent"
           element={
@@ -53,17 +68,46 @@ function App() {
               setStudents={setStudents}
             />
           }
-        /> 
+        />  
 
-        <Route
+         <Route
           path="/students"
           element={<StudentList students={students} />}
-        />
+        /> 
 
-        <Route path="/contact" element={<Contact />} />
+         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
+         
+         {/* navigation */}
+
+
+
+         
+           {/* Task-9 */}
+     <Route path="/useeffectdemo" element={<UseEffectDemo />} />
+       <Route path ="/child" element={<Child />} /> 
+      
+
+
+         {/* <Route path="/use" element={<USE />} /> */}
+             
+               {/* Task-9 */}
+
+
+{/* 
+    Fetch Api  */}
+
+    <Route path="/fetchapi" element={<FetchAPI/>} />
+    {/* AxiosFetch */}
+    <Route path="/AxiosFetch" element={<AxiosFetch/>} />
+
       </Routes>
+   
+    
     </>
+
+
+
   );
 }
 

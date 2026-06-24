@@ -1,0 +1,108 @@
+.fetch-api-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.fetch-api-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.fetch-api-input-section {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.fetch-api-input-section input {
+  width: 320px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.fetch-api-input-section button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.fetch-api-input-section button:hover {
+  background-color: #218838;
+}
+
+.fetch-api-users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.fetch-api-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.fetch-api-card:hover {
+  transform: translateY(-5px);
+}
+
+.fetch-api-card h3 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.fetch-api-card p {
+  color: #666;
+  margin-bottom: 15px;
+  word-break: break-word;
+}
+
+.fetch-api-btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.fetch-api-edit-btn {
+  flex: 1;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.fetch-api-edit-btn:hover {
+  background-color: #e68900;
+}
+
+.fetch-api-delete-btn {
+  flex: 1;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.fetch-api-delete-btn:hover {
+  background-color: #c82333;
+}
+
+body {
+  background-color: #f4f6f8;
+}
